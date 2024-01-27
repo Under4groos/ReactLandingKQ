@@ -2,6 +2,9 @@ import React from 'react';
 // import './Resource/css/App.scss';
 import './Resource/css/style115.scss'
 import UiInner from './Controls/uiInner'
+import Ui3dImage from './Controls/3dImage'
+import Uisvgicon from './Controls/uisvgicon'
+
 
 
 function App() {
@@ -17,22 +20,27 @@ function App() {
                       <div className="inner">
                         <div>
                             <div id="image07" className="image">
-                                <span className="frame">
-                                    <img src="https://i.imgur.com/yjcOnAp.png" alt=""/>
-                                </span>
+                              <span className="frame">
+                                <Ui3dImage Url='https://i.imgur.com/yjcOnAp.png'></Ui3dImage>
+                                  
+                              </span>
                             </div>
                         </div>
                         <div>
                           <hr id="divider01" className="style1"/>
-                          <h1 id="text12" className="style3">-------------</h1>
-                          <p id="text13" className="style5">-----------------------------------------</p>
+                          <h1 id="text12" className="style3">Sed et ultrices</h1>
+                          <p id="text13" className="style5">Nisl pretium fusce id velit ut. Vivamus arcu felis bibendum ut tristique. Dignissim sodales ut eu sem integer vitae justo.</p>
                           <ul id="buttons06" className="style1 buttons">
                             <li>
                               <a href="#start" className="button n01">
-                                <svg>
-                                    <use ></use>
-                                </svg>
-                                <span className="label">---------------</span>
+                                <Uisvgicon ID={0}></Uisvgicon>
+                                <span className="label">Download</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#start" className="button n01">
+                                <Uisvgicon ID={0}></Uisvgicon>
+                                <span className="label">Download</span>
                               </a>
                             </li>
                           </ul>
@@ -73,6 +81,49 @@ function App() {
                           </div>
                       </div>
                   </div>
+
+                  <div id="container14" className="container columns">
+                    <div className="wrapper">
+                      <div className="inner">
+                          <div>
+                              <div id="image02" className="style2 image">
+                                  <span className="frame">
+                                      <img src="assets/images/image02.svg?v=c54feabf" alt=""/>
+                                  </span>
+                              </div>
+                              <h3 id="text01" className="style6">Semper feugiat</h3>
+                              <p id="text84" className="style2">Tempor nec feugiat nisl pretium. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Accumsan tortor posuere.</p>
+                              <ul id="buttons03" className="style1 buttons">
+                                  <li>
+                                      <a href="https://domain.ext/path/" className="button n01">
+                                          <Uisvgicon ID={0}></Uisvgicon>
+                                          <span className="label">Tortor vitae</span>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div>
+                              <div id="image01" className="style2 image">
+                                  <span className="frame">
+                                      <img src="assets/images/image01.svg?v=c54feabf" alt=""/>
+                                  </span>
+                              </div>
+                              <h3 id="text04" className="style6">Maecenas pharetra</h3>
+                              <p id="text22" className="style2">Aliquam sem fringilla ut morbi tincidunt augue. Semper eget duis at tellus. Suspendisse sed nisi lacus sed viverra. Enim lobortis scelerisque.</p>
+                              <ul id="buttons04" className="style1 buttons">
+                                  <li>
+                                      <a href="https://domain.ext/path/" className="button n01">
+                                          <Uisvgicon ID={0}></Uisvgicon>
+                                          <span className="label">Integer eget</span>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+
 
 
                 </section>
