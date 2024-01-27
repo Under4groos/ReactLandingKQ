@@ -1,5 +1,8 @@
 
 import React from 'react';
+import Uisvgicon from './uisvgicon'
+import '../Resource/css/style115.scss'
+
 
 interface uiInnerProp{
     Url:string ;
@@ -17,6 +20,7 @@ const uiInner = ({Url , TextUp , TextDown}:uiInnerProp) => {
                 </span>
             </div>
             <h3 id="text08" className="style6">{TextUp}</h3>
+           
             <p id="text09" className="style2">{TextDown}</p>
         </div>
     );

@@ -5,11 +5,12 @@ import UiInner from './Controls/uiInner'
 import Ui3dImage from './Controls/3dImage'
 import Uisvgicon from './Controls/uisvgicon'
 import Uibuy from './Controls/uibuy'
-
-
+import Uifooter from './Controls/uifooter'
+import Snow from './Controls/snow'
 function App() {
   return (
     <div className="App">
+      <Snow></Snow>
       <header className="App-header">
           <div id='wrapper'>
             <div id="main">
@@ -33,13 +34,13 @@ function App() {
                           <ul id="buttons06" className="style1 buttons">
                             <li>
                               <a href="#start" className="button n01">
-                                <Uisvgicon ID={0}></Uisvgicon>
+                                <Uisvgicon ID="0"></Uisvgicon>
                                 <span className="label">Download</span>
                               </a>
                             </li>
                             <li>
                               <a href="#start" className="button n01">
-                                <Uisvgicon ID={0}></Uisvgicon>
+                                <Uisvgicon ID="0"></Uisvgicon>
                                 <span className="label">Buy</span>
                               </a>
                             </li>
@@ -48,13 +49,13 @@ function App() {
                       </div>
                     </div>
                   </div>
-
+                  
                   <Uibuy></Uibuy>
 
 
 
-                  <hr id="divider07" className="style2"/>
-                  <div id="container04" data-scroll-id="start" data-scroll-behavior="previous" data-scroll-offset="0" data-scroll-speed="3" data-scroll-invisible="1" className="style1 container default">
+                  
+                  <div id="container04" data-scroll-id="start" data-scroll-behavior="previous" data-scroll-offset="0" data-scroll-speed="3" data-scroll-invisible="1" className="mar-top style1 container default">
                       <div className="wrapper">
                           <div className="inner">
                               <hr id="divider03" className="style1"/>
@@ -64,7 +65,7 @@ function App() {
                       </div>
                   </div>
                   
-                  <div id="container01" className="container columns">
+                  <div id="container01" className="mar-top container columns">
                     <div className="wrapper">
                       <div className="inner">
                         <UiInner Url="https://i.imgur.com/yjcOnAp.png" TextDown="Semper feugiat" TextUp="Sed et blandit placerat duis ultricies lacus sed turpis. Euismod nisi porta lore" ></UiInner>
@@ -73,17 +74,8 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  
-
-
-
-
-
-
-
-
-                  <hr id="divider08" className="style2"/>
-                  <div id="container07" className="style1 container default">
+                
+                  <div id="container07" className="mar-top style1 container default">
                       <div className="wrapper">
                           <div className="inner">
                               <hr id="divider10" className="style1"/>
@@ -93,7 +85,7 @@ function App() {
                       </div>
                   </div>
 
-                  <div id="container14" className="container columns">
+                  <div id="container14" className=" mar-top container columns">
                     <div className="wrapper">
                       <div className="inner">
                         <div>
@@ -107,7 +99,7 @@ function App() {
                             <ul id="buttons03" className="style1 buttons">
                                 <li>
                                     <a href="https://domain.ext/path/" className="button n01">
-                                        <Uisvgicon ID={0}></Uisvgicon>
+                                        <Uisvgicon ID="0"></Uisvgicon>
                                         <span className="label">Tortor vitae</span>
                                     </a>
                                 </li>
@@ -124,43 +116,7 @@ function App() {
                           <ul id="buttons04" className="style1 buttons">
                               <li>
                                   <a href="https://domain.ext/path/" className="button n01">
-                                      <Uisvgicon ID={0}></Uisvgicon>
-                                      <span className="label">Integer eget</span>
-                                  </a>
-                              </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div className="inner mar-top">
-                        <div>
-                            <div id="image02" className="style2 image">
-                                <span className="frame">
-                                    <img src="https://i.imgur.com/LaJWGtb.png" alt=""/>
-                                </span>
-                            </div>
-                            <h3 id="text01" className="style6">Semper feugiat</h3>
-                            <p id="text84" className="style2">Tempor nec feugiat nisl pretium. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Accumsan tortor posuere.</p>
-                            <ul id="buttons03" className="style1 buttons">
-                                <li>
-                                    <a href="https://domain.ext/path/" className="button n01">
-                                        <Uisvgicon ID={0}></Uisvgicon>
-                                        <span className="label">Tortor vitae</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                          <div id="image01" className="style2 image">
-                              <span className="frame">
-                                  <img src="https://i.imgur.com/LaJWGtb.png" alt=""/>
-                              </span>
-                          </div>
-                          <h3 id="text04" className="style6">Maecenas pharetra</h3>
-                          <p id="text22" className="style2">Aliquam sem fringilla ut morbi tincidunt augue. Semper eget duis at tellus. Suspendisse sed nisi lacus sed viverra. Enim lobortis scelerisque.</p>
-                          <ul id="buttons04" className="style1 buttons">
-                              <li>
-                                  <a href="https://domain.ext/path/" className="button n01">
-                                      <Uisvgicon ID={0}></Uisvgicon>
+                                      <Uisvgicon ID="0"></Uisvgicon>
                                       <span className="label">Integer eget</span>
                                   </a>
                               </li>
@@ -169,47 +125,10 @@ function App() {
                       </div>
                     </div>
                   </div>
-
-                 
-
-                  <ul id="icons03" className="style1 icons">
-                    <li>
-                      <a className="n01" href="https://domain.ext/path" aria-label="Instagram">
-                        <svg>
-                            <use ></use>
-                        </svg>
-                        <span className="label">Instagram</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a className="n02" href="https://domain.ext/path" aria-label="Twitter">
-                        <svg>
-                            <use ></use>
-                        </svg>
-                        <span className="label">Twitter</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a className="n02" href="https://domain.ext/path" aria-label="Facebook">
-                        <svg>
-                            <use ></use>
-                        </svg>
-                        <span className="label">Facebook</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a className="n04" href="https://domain.ext/path" aria-label="Email">
-                        <svg>
-                            <use ></use>
-                        </svg>
-                        <span className="label">Email</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <p id="text58" className="style1">© Untitled. All rights reserved.</p>
+                  {/* <hr id="divider08" className="style2"/> */}
+                  <div className='mar-top'/>
+                  <Uifooter></Uifooter>
                 </section>
-
-
               </div>
             </div>
           </div>
