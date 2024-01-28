@@ -35,7 +35,9 @@ function App() {
                             <li>
                               <a href="#start" className="button n01">
                                 <Uisvgicon ID="0"></Uisvgicon>
+                           
                                 <span className="label">Download</span>
+                                
                               </a>
                             </li>
                             <li>
