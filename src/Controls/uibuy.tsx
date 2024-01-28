@@ -13,13 +13,13 @@ const uibuy = () => {
                         <div id="list01" className="style1 list">
                         <ul>
                             <li>
-                                <p>Elit duis tristique sollicitudin nibh sit congue mauris rhoncus aenean vel elit scelerisque mauris</p>
+                                <p>1</p>
                             </li>
                             <li>
-                                <p>Sed pulvinar etiam non quam lacus suspendisse</p>
+                                <p>2</p>
                             </li>
                             <li>
-                                <p>Magna lobortis mattis aliquam faucibus purus in massa tempor adipiscing feugiat</p>
+                                <p>3</p>
                             </li>
                         </ul>
                         </div>
@@ -32,13 +32,13 @@ const uibuy = () => {
                         <div id="list02" className="style1 list">
                         <ul>
                             <li>
-                                <p>Duis dapibus rutrum etiam consequat facilisis</p>
+                                <p>1</p>
                             </li>
                             <li>
-                                <p>Class aptent taciti sociosqu ad litora torquent nostra per magna inceptos himenaeos</p>
+                                <p>2</p>
                             </li>
                             <li>
-                                <p>Etiam tristique libero eu nibh porttitor etiam amet fermentum nullam venenatis lorem ipsum</p>
+                                <p>3</p>
                             </li>
                         </ul>
                         </div>
