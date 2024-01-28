@@ -16,7 +16,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     margin-top: 3.25rem !important;
 }
 .mar-top-9rem{
-    margin-top: 29rem !important;
+    margin-top: 9rem !important;
+}
+.mar-top-3rem{
+    margin-top: 3rem !important;
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
     display: block;
@@ -90,8 +93,11 @@ body:before {
     transform: scale(1);
     width: 100vw;
     z-index: 0;
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20path%20%7B%20fill%3A%20none%3B%20stroke-width%3A%203.01px%3B%20stroke%3A%20rgba(255,255,255,0.031)%3B%20vector-effect%3A%20non-scaling-stroke%3B%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20d%3D%22M448%2C512c0-128-128-128-128-256S448%2C128%2C448%2C0%22%20%2F%3E%20%3Cpath%20d%3D%22M192%2C512c0-128-128-128-128-256S192%2C128%2C192%2C0%22%20%2F%3E%3C%2Fsvg%3E');
-    background-size: 1091px;
+    // background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20path%20%7B%20fill%3A%20none%3B%20stroke-width%3A%203.01px%3B%20stroke%3A%20rgba(255,255,255,0.031)%3B%20vector-effect%3A%20non-scaling-stroke%3B%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20d%3D%22M448%2C512c0-128-128-128-128-256S448%2C128%2C448%2C0%22%20%2F%3E%20%3Cpath%20d%3D%22M192%2C512c0-128-128-128-128-256S192%2C128%2C192%2C0%22%20%2F%3E%3C%2Fsvg%3E');
+    background-image: url("https://i.pinimg.com/originals/e8/47/4d/e8474d6f96f3c27d1d87266734da721f.jpg");
+    filter: blur(10px);
+    opacity: 0.1;
+    background-size: 2091px;
     background-position: center;
     background-repeat: repeat;
 }
@@ -406,6 +412,7 @@ body.is-instant:after {
 
 .image.style2 .frame img {
     transition: none;
+    border-radius: 8px;
 }
 
 #image07 .frame {
