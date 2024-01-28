@@ -6,7 +6,7 @@ import Uisvgicon from './uisvgicon'
 
 const uifooter = () => {
     return <>
-    <ul id="icons03" className="style1 icons">
+    <ul id="icons03" className="style1 icons mar-top">
         <li>
             <a className="n01" href="https://vk.com/underko" aria-label="Instagram">
             <Uisvgicon ID="vk"></Uisvgicon>
@@ -21,7 +21,7 @@ const uifooter = () => {
         </li>
          
     </ul>
-    <p id="text58" className="style1">© Untitled. All rights reserved.</p>
+    <p id="text58" className="style1 mar-top">© Untitled. All rights reserved.</p>
     </>;
 }
 export default uifooter;

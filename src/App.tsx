@@ -7,10 +7,32 @@ import Uisvgicon from './Controls/uisvgicon'
 import Uibuy from './Controls/uibuy'
 import Uifooter from './Controls/uifooter'
 import Snow from './Controls/snow'
+import Git from './Module/GitHub'
+
+
+let git_ = new Git("https://api.github.com/repos/Under4groos/SmdCompile.View/releases")
+let v = (Test:any) =>{
+  console.log(Test)
+  let v = document.getElementById("download");
+  if(v)
+    v.setAttribute("href", Test.URL);
+  let с = document.getElementById("text60 count");
+  if(с){
+    
+    с.appendChild(document.createTextNode(Test.DownloadCount) );
+  }
+     
+
+
+  console.log(с)
+}
+git_.Get(v);
+ 
+ 
 function App() {
   return (
     <div className="App">
-      <Snow></Snow>
+      <Snow Count={200}></Snow>
       <header className="App-header">
           <div id='wrapper'>
             <div id="main">
@@ -27,16 +49,18 @@ function App() {
                               </span>
                             </div>
                         </div>
+                       
                         <div>
                           <hr id="divider01" className="style1"/>
                           <h1 id="text12" className="style3">SmdCompile</h1>
+
                           <p id="text13" className="style5">This is a visual wrapper for StudioMDL</p>
                           <ul id="buttons06" className="style1 buttons">
                             <li>
-                              <a href="#start" className="button n01">
+                              <a  id='download' href="#" className="button n01">
                                 <Uisvgicon ID="0"></Uisvgicon>
                            
-                                <span className="label">Download</span>
+                                <span className="label" >Download</span>
                                 
                               </a>
                             </li>
@@ -48,10 +72,14 @@ function App() {
                             </li>
                           </ul>
                         </div>
+                        <h2 id="text60 count" style={{opacity:"0.1"}} className="style6 mar-top">Скачиваний: </h2>
                       </div>
                     </div>
+                    
                   </div>
                   
+                  
+                   
                   <Uibuy></Uibuy>
 
 
@@ -61,28 +89,45 @@ function App() {
                       <div className="wrapper">
                           <div className="inner">
                               <hr id="divider03" className="style1"/>
-                              <h2 id="text85" className="style4">Blandit aliquam</h2>
-                              <p id="text86" className="style2">Nisl pretium fusce id velit ut. Vivamus arcu felis bibendum ut tristique. Dignissim sodales ut eu sem integer vitae justo.</p>
+                              <h2 id="text85" className="style4">Screenshots</h2>
+                              <p id="text86" className="style2">Скриншоты, видео и прочее.. </p>
                           </div>
                       </div>
                   </div>
                   
-                  <div id="container01" className="mar-top container columns">
+                  <div id="container14"  className="container columns">
                     <div className="wrapper">
                       <div className="inner">
-                        <UiInner Url="https://i.imgur.com/yjcOnAp.png" TextDown="Semper feugiat" TextUp="Sed et blandit placerat duis ultricies lacus sed turpis. Euismod nisi porta lore" ></UiInner>
-                        <UiInner Url="https://i.imgur.com/yjcOnAp.png" TextDown="Semper feugiat" TextUp="Sed et blandit placerat duis ultricies lacus sed turpis. Euismod nisi porta lore" ></UiInner>
-                        <UiInner Url="https://i.imgur.com/yjcOnAp.png" TextDown="Semper feugiat" TextUp="Sed et blandit placerat duis ultricies lacus sed turpis. Euismod nisi porta lore" ></UiInner>
+                        <div>
+                          <div id="image02" className="style2 image">
+                              <span className="frame">
+                                  <img src="https://i.imgur.com/vHCf43K.png" alt=""/>
+                              </span>
+                          </div>
+                          <h3 id="text01" className="style6">Решения и проекты</h3>
+                          <p id="text84" className="style2">Создание, открытие, удаление, компиляция, конвертация материалов "на лету" </p>
+                        </div>
+                        <div>
+                          <div id="image02" className="style2 image">
+                              <span className="frame">
+                                  <img src="https://i.imgur.com/Cfl5eaS.png" alt=""/>
+                              </span>
+                          </div>
+                          <h3 id="text01" className="style6">Настройки программы</h3>
+                          <p id="text84" className="style2">Выбор игры, запуска. Добавление папки с игрой.</p>
+                        </div>
+                        
+
                       </div>
                     </div>
                   </div>
                 
-                  <div id="container07" className="mar-top style1 container default">
+                  <div id="container07" className="mar-top-9rem style1 container default">
                       <div className="wrapper">
                           <div className="inner">
                               <hr id="divider10" className="style1"/>
-                              <h2 id="text11" className="style4">Auctor eu augue</h2>
-                              <p id="text19" className="style2">Nisl pretium fusce id velit ut. Vivamus arcu felis bibendum ut tristique. Dignissim sodales ut eu sem integer vitae justo.</p>
+                              <h2 id="text11" className="style4">Developer tools</h2>
+                              <p id="text19" className="style2">Библиотеки, Аддоны, программы</p>
                           </div>
                       </div>
                   </div>
@@ -93,10 +138,10 @@ function App() {
                         <div>
                             <div id="image02" className="style2 image">
                                 <span className="frame">
-                                    <img src="https://i.imgur.com/LaJWGtb.png" alt=""/>
+                                    <img src="https://i.imgur.com/mDvGYOS.png" alt=""/>
                                 </span>
                             </div>
-                            <h3 id="text01" className="style6">Semper feugiat</h3>
+                            <h3 id="text01" className="style6">VTFEdit</h3>
                             <p id="text84" className="style2">Tempor nec feugiat nisl pretium. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Accumsan tortor posuere.</p>
                             <ul id="buttons03" className="style1 buttons">
                                 <li>
@@ -110,10 +155,10 @@ function App() {
                         <div>
                           <div id="image01" className="style2 image">
                               <span className="frame">
-                                  <img src="https://i.imgur.com/LaJWGtb.png" alt=""/>
+                                  <img src="https://i.imgur.com/mDvGYOS.png" alt=""/>
                               </span>
                           </div>
-                          <h3 id="text04" className="style6">Maecenas pharetra</h3>
+                          <h3 id="text04" className="style6">Blender Source tool</h3>
                           <p id="text22" className="style2">Aliquam sem fringilla ut morbi tincidunt augue. Semper eget duis at tellus. Suspendisse sed nisi lacus sed viverra. Enim lobortis scelerisque.</p>
                           <ul id="buttons04" className="style1 buttons">
                               <li>
@@ -127,9 +172,9 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  {/* <hr id="divider08" className="style2"/> */}
-                  <div className='mar-top'/>
-                  <Uifooter></Uifooter>
+                
+                
+                  <Uifooter ></Uifooter>
                 </section>
               </div>
             </div>
