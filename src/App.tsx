@@ -288,7 +288,7 @@ function App() {
                           "https://drive.usercontent.google.com/u/0/uc?id=1hQ7FKtNEdzuHU3eKb17LfJbDHODru7Q5&export=download"
                         }
                         urlimg={"https://i.imgur.com/Yn597bF.png"}
-                        name={"VTFEdit"}
+                        name={"VTFEdit ( ZIP )"}
                         data={
                           "Инструмент для просмотра, редактирования и создания файлов VTF"
                         }
@@ -300,7 +300,7 @@ function App() {
                           "https://drive.usercontent.google.com/u/0/uc?id=1QLZGQ3ExhkR71UGGBB0-bKCmowfxAk4c&export=download"
                         }
                         urlimg={"https://i.imgur.com/bcSiOiz.png"}
-                        name={"Blender Source Tool"}
+                        name={"Blender Source Tool ( ZIP )"}
                         data={
                           "Позволяет Blender импортировать и экспортировать SMD и DMX"
                         }
@@ -312,8 +312,8 @@ function App() {
                         url={
                           "https://drive.usercontent.google.com/u/0/uc?id=1nlh74AlAvmikpjJABX7R3tEkGcbEdvXT&export=download"
                         }
-                        urlimg={"https://drive.usercontent.google.com/u/0/uc?id=10rG4rHkzfp4pD2JlLytV2u1C5f6RpuFJ&export=download"}
-                        name={"SyntaxBox"}
+                        urlimg={"https://raw.githubusercontent.com/Under4groos/ReactLandingKQ/master/src/Images/SyntaxBox.png"}
+                        name={"SyntaxBox ( ZIP )"}
                         data={
                           "Архив с конфигурацией для тектового редактора. Подсветка синтаксиса."
                         }
@@ -321,10 +321,10 @@ function App() {
                       ></UiLinkDownload>
                       <UiLinkDownload
                         url={
-                          "https://drive.usercontent.google.com/u/0/uc?id=1nlh74AlAvmikpjJABX7R3tEkGcbEdvXT&export=download"
+                          "https://drive.usercontent.google.com/u/0/uc?id=1LW7Zg19-jS4Vszm1zlqf_cXjOpIsQwS2&export=download"
                         }
-                        urlimg={"https://i.imgur.com/nEpwTSP.png"}
-                        name={"QC commands (ZIP)"}
+                        urlimg={"https://raw.githubusercontent.com/Under4groos/ReactLandingKQ/master/src/Images/qccommands.png"}
+                        name={"QC commands ( ZIP )"}
                         data={
                           "Архив с QC командами в фармате Json "
                         }
