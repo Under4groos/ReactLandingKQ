@@ -1,4 +1,5 @@
 import React from "react";
+import { createRoot } from 'react-dom/client';
 import "./Resource/css/App.scss";
 import "./Resource/css/style115.scss";
 import UiInner from "./Controls/uiInner";
@@ -8,8 +9,11 @@ import Uibuy from "./Controls/uibuy";
 import Uifooter from "./Controls/uifooter";
 import Snow from "./Controls/snow";
 import UiLinkDownload from "./Controls/uiLinkDownload";
+import Uilistver from "./Controls/uilistver";
+
 
 import Git from "./Module/GitHub";
+import ReactDOM from "react-dom";
 
 let git_ = new Git(
   "https://api.github.com/repos/Under4groos/SmdCompile.View/releases"
@@ -27,21 +31,23 @@ let v = (Test: any) => {
       )
     );
   }
+ // console.log(Test.Commits)
+  ReactDOM.render(<Uilistver Data={Test.Commits}></Uilistver>, document.getElementById('last'));  
+   
+   
 
-  //console.log(с);
+    
+  
 };
 git_.Get(v);
 
-function _download(){
+function _download() {
   let v = document.getElementById("_heart");
   if (v) {
-    v.style.display = 'block';
+    v.style.display = "block";
     console.log(v);
   }
-    
-    
 }
-
 
 function App() {
   return (
@@ -79,21 +85,30 @@ function App() {
                           Это визуальная обёртка StudioMDL
                         </p>
 
-                        <ul id="buttons06"  className="style1 buttons">
+                        <ul id="buttons06" className="style1 buttons">
                           <li>
-                            <a id="download" onMouseDown={_download} href="#" className="button n01">
+                            <a
+                              id="download"
+                              onMouseDown={_download}
+                              href="#"
+                              className="button n01"
+                            >
                               <Uisvgicon ID="0"></Uisvgicon>
 
                               <span className="label">Download </span>
-                              
                             </a>
                             <h2
                               id="text60 count"
                               style={{ marginTop: "10px" }}
-                              className="style1"
+                              className="style1 "
                             >
                               # Downloads:{" "}
                             </h2>
+                            <div className="tooltip style1" >
+                              <h2 className="style1">Verisons</h2>
+                              <span className="tooltiptext style5" id="last" />
+                               
+                            </div>
                           </li>
                           <li>
                             <a
@@ -114,14 +129,16 @@ function App() {
                       </h2>
                       <Uisvgicon ID="heart"></Uisvgicon>
                     </div> */}
-                    
                   </div>
                 </div>
 
                 <hr id="divider03" className="style2" />
 
                 <div id="container01" className="container columns full screen">
-                  <div className="wrapper">
+                  <div
+                    className="wrapper"
+                    style={{ margin: "0px 30px 0px 30px" }}
+                  >
                     <h2 id="text85" className="style4">
                       Плюшки
                     </h2>
@@ -130,8 +147,8 @@ function App() {
                       <div>
                         <h2 id="text06" className="style6"></h2>
                         <p id="text04" className="style1">
-                          Создание, открытие и удаление файлов, компиляция и конвертация
-                          материалов "на лету" и многое другое...
+                          Создание, удаление файлов, компиляция и
+                          конвертация материалов "на лету" и многое другое...
                         </p>
                       </div>
                       <div>
@@ -161,7 +178,9 @@ function App() {
                       <div>
                         <h2 id="text13" className="style6"></h2>
                         <p id="text15" className="style1">
-                          Полная настройка Текстового редактора. В папке "Data\SyntaxBox" вы можете менять конфигурации форматов. 
+                          Полная настройка Текстового редактора. В папке
+                          "Data\SyntaxBox" вы можете менять конфигурации
+                          форматов.
                         </p>
                       </div>
 
@@ -239,7 +258,7 @@ function App() {
                           Настройки программы
                         </h3>
                         <p id="text84" className="style2">
-                          Выбор игры, запуска. Добавление папки с игрой.
+                          Выбор игры, способ запуска игры (Steam, exe). Добавление папки с игрой.
                         </p>
                       </div>
                     </div>
@@ -293,14 +312,26 @@ function App() {
                         url={
                           "https://drive.usercontent.google.com/u/0/uc?id=1nlh74AlAvmikpjJABX7R3tEkGcbEdvXT&export=download"
                         }
-                        urlimg={"https://i.vgy.me/QYna3w.jpg"}
+                        urlimg={"https://drive.usercontent.google.com/u/0/uc?id=10rG4rHkzfp4pD2JlLytV2u1C5f6RpuFJ&export=download"}
                         name={"SyntaxBox"}
                         data={
                           "Архив с конфигурацией для тектового редактора. Подсветка синтаксиса."
                         }
                         datadown={"Download"}
                       ></UiLinkDownload>
+                      <UiLinkDownload
+                        url={
+                          "https://drive.usercontent.google.com/u/0/uc?id=1nlh74AlAvmikpjJABX7R3tEkGcbEdvXT&export=download"
+                        }
+                        urlimg={"https://i.imgur.com/nEpwTSP.png"}
+                        name={"QC commands (ZIP)"}
+                        data={
+                          "Архив с QC командами в фармате Json "
+                        }
+                        datadown={"Download"}
+                      ></UiLinkDownload>
                     </div>
+                     
                   </div>
                 </div>
                 <hr id="divider03" className="style2" />
