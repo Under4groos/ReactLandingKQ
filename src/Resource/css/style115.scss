@@ -551,8 +551,8 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     font-family: 'Inter', sans-serif;
     letter-spacing: 0.025rem;
     width: calc(100% + 0.025rem);
-    font-size: 1.125em;
-    line-height: 1.875;
+    // font-size: 1.025em;
+    line-height: 1.375;
     font-weight: 300;
 }
 
@@ -633,14 +633,14 @@ h1.style1 span.p:nth-child(n + 2), h2.style1 span.p:nth-child(n + 2), h3.style1 
 .buttons.style1 li a {
     display: inline-flex;
     width: auto;
-    height: 3.75rem;
-    line-height: 3.75rem;
+    height: 3.05rem;
+    line-height: 3.05rem;
     padding: 0 1.875rem;
     vertical-align: middle;
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
-    letter-spacing: 0.25rem;
-    padding-left: calc(0.25rem + 1.875rem);
+    // letter-spacing: 0.25rem;
+    // padding-left: calc(0.25rem + 1.875rem);
     font-size: 0.75em;
     font-weight: 600;
     border-radius: 0.375rem;

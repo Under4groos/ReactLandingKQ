@@ -18,7 +18,7 @@ const uiLinkDownload = ({
 }: uiLinkDownloadProp) => {
   return (
     <div>
-      <div id="image02" className="style2 image">
+      <div id="image02" style={{display:"none"}} className="style2 image">
         <span className="frame">
           <div className="div-3d">
             <img style={{ height: "320px" }} src={urlimg} alt="" />
